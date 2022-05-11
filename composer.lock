@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2eec58b6b091ba94d79696d44642cea",
+    "content-hash": "56771ef991af7b32197ce29093a46cec",
     "packages": [
         {
             "name": "aigletter/contracts",
@@ -45,6 +45,47 @@
                 "source": "https://github.com/aigletter/contracts/tree/1.0.2"
             },
             "time": "2022-05-02T20:50:26+00:00"
+        },
+        {
+            "name": "koltsova/router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KateKoltsova/Router.git",
+                "reference": "e211fb80a3be1a40b44f98440a1594b6b5336939"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KateKoltsova/Router/zipball/e211fb80a3be1a40b44f98440a1594b6b5336939",
+                "reference": "e211fb80a3be1a40b44f98440a1594b6b5336939",
+                "shasum": ""
+            },
+            "require": {
+                "aigletter/contracts": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Koltsova\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kate Koltsova",
+                    "email": "kate.petronyuk@gmail.com"
+                }
+            ],
+            "description": "Router",
+            "support": {
+                "issues": "https://github.com/KateKoltsova/Router/issues",
+                "source": "https://github.com/KateKoltsova/Router/tree/master"
+            },
+            "time": "2022-05-11T21:20:49+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -101,7 +142,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "koltsova/router": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

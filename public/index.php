@@ -7,5 +7,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $config = include __DIR__ . '/../config/main.php';
 
 $app = Aigletter\Framework\Application::getApp($config);
-$app->run();
+try {
+    $app->run();
+} catch (Exception $exception) {
+    echo $exception->getMessage();
+}
 

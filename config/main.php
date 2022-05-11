@@ -4,7 +4,7 @@ return [
     'app_name' => 'Test framework',
     'components' => [
         'router' => [
-            'factory' => \Aigletter\Framework\Components\Routing\RouterFactory::class,
+            'factory' => \Koltsova\Router\RouterFactory::class,
         ],
         'cache' => [
             'factory' => \Aigletter\Framework\Components\Caching\CacheFactory::class,

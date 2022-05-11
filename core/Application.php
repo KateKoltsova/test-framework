@@ -2,6 +2,7 @@
 
 namespace Aigletter\Framework;
 
+use Aigletter\App\Controllers\ProductController;
 use Aigletter\Framework\Exceptions\GetComponentException;
 use Aigletter\Framework\Interfaces\RunnableInterface;
 
@@ -47,6 +48,7 @@ class Application implements RunnableInterface
     public function run()
     {
         $router = $this->getComponent('router');
+        $router->addRoute('/product', [ProductController::class, 'infoClass']);
         $action = $router->route($_SERVER['REQUEST_URI']);
 
         return $action();
